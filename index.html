@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="Consulting/jl-logo.png" type="image/x-icon">
+            <link rel="stylesheet" href="index.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-AiPY61+5JptzK/U+3VLZOZEfL+yMsK6T6AZumK2Ok9iM3pLxoa+BrFq2T5ZBDZbw" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    
+    
+        <title>IT consulting</title>
+    </head>
+<body>
+    
+<!-- NavBar -->
+   
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white; height: auto; box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05); margin-bottom: 1px !important;">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="padding: 0;">
+        <img src="Consulting/navbar - Logo.png" alt="Logo" class="nav-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="border: none;"></span>
+      </button>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <a class="navbar-brand" href="#" style="padding: 0;">
+            <img src="Consulting/navbar - Logo.png" alt="Logo" class="nav-logo-sidebar">
+          </a>
+          <span class="cancel-icon" onclick="closeSidebar()">&times;</span>
+        </div>
+        <ul class="navbar-nav" id="nav-sidebar-ul">
+            <li class="nav-item">
+                <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+                    onclick="toggleDropdown('about')">About <i id="about-icon"
+                        class="fas bi-chevron-down about-icon"></i></a>
+                <div id="about-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownAbout"
+                    style="display: none;">
+                    <a class="dropdown-item" href="#">JustLogix</a>
+                    <a class="dropdown-item" href="#">Skein Technologies</a>
+                    <a class="dropdown-item" href="#">Management</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Product</a>
+                </div>
+            </li>
+          <hr class="footer-line" style="margin-top: 0px !important;">
+          <li class="nav-item" style="margin-top: -20px !important;">
+            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+              onclick="toggleDropdown('services')">Services <i id="services-icon" class="fas bi-chevron-down"></i></a>
+            <div id="services-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownServices"
+              style="display: none;">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <hr class="footer-line" style="margin-top: 0px !important;">
+          <li class="nav-item" style="margin-top: -20px !important;">
+            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+              onclick="toggleDropdown('Technologies')">Technologies <i id="services-icon"
+                class="fas bi-chevron-down"></i></a>
+            <div id="Technologies-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownTechnologies"
+              style="display: none;">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <hr class="footer-line" style="margin-top: 0px !important;">
+
+          <li class="nav-item" style="margin-top: -20px !important;">
+            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+              onclick="toggleDropdown('Industries')">Industries <i id="services-icon"
+                class="fas bi-chevron-down"></i></a>
+            <div id="Industries-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownIndustries"
+              style="display: none;">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <hr class="footer-line" style="margin-top: 0px !important;">
+
+          <li class="nav-item" style="margin-top: -20px !important;">
+            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+              onclick="toggleDropdown('Portfolios')">Portfolios </a>
+            
+          </li>
+          <hr class="footer-line" style="margin-top: 0px !important;">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><button type="button" class="navbar-button">Get in Touch</button></a>
+          </li>
+
+          <!-- Add other dropdown items -->
+        </ul>
+      </div>
+      <!-- End Sidebar -->
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto"
+          style="font-weight: 400; font-family: 'Source Sans Pro', sans-serif; gap: 10px !important;">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownIndustries" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownIndustries">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTechnologies" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownTechnologies">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technologies</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" style="margin-top: 1px;">
+            <a class="nav-link" href="#" id="navbarDropdownPortfolio" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><button type="button" class="navbar_button">Get in Touch</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+    
+<!-- Section - 1 IT Consulting Services -->
+
+
+<div class="container Consulting-services">
+    <div class="row">
+        <div class="col-md-6 text-md-start Consulting-services-part1">
+            <h1>IT Consulting Services</h1> <br>
+
+            <h6>Optimize Current Operations. Launch New Projects
+            </h6> <br>
+
+            <p>
+                Our IT outsourcing services help C-suite executives to achieve their short-term and long-term business goals such as web & app development, software support & maintenance, and other business initiatives. Bacancy has experience of all major industries and sectors, Leverage our IT outsourcing expertise to excel your business operations with result-driven development.
+            </p> <br>
+
+            <div class="Consulting-btn1">
+                <button type="button">Get In Touch</button>
+            </div>
+        </div>
+
+        <div class="col-md-6 text-md-start Consulting-services-part2">
+            <img src="Consulting/IT consulting-hero img.png" alt="Consulting Services" class="img-fluid" />
+        </div>
+    </div>
+
+</div>
+
+<!-- Section - 2 Service Overview -->
+
+<div class="service-overview-top" style="background-color:#23899C0D ;">
+    <br>
+    <div class="container service-overview">
+
+        <div class="service-overview-head">
+            <h1>Service <span style="color: #2CA068;">Overview</span></h1>
+        </div>  
+        <div class="service-overview-para1">
+            <p>
+                Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui liber
+            </p>
+        </div>
+        <br>
+        <div class="row service-overview-row1">
+
+            <div class="col-lg col-md-6 col-sm-12 service-overview-content1 ">
+               <div class="service-overview-col">
+                    <div>
+                        <img src="Consulting/service-overview uiux.png" alt="UI/Ux"><label>UI/UX Design</label>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui liber
+                    </p>
+                    <a href="#">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+               </div>
+            </div>
+            <div class="col-lg col-md-6 col-sm-12 service-overview-content1">
+                <div class="service-overview-col">
+                    <div>
+                        <img src="Consulting/service-overview web development.png" alt="web development"><label>Web Development</label>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui liber
+                    </p>
+                    <a href="#">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+               </div>
+            </div>
+            <div class="col-lg col-md-6 col-sm-12 service-overview-content1">
+                <div class="service-overview-col">
+                    <div>
+                        <img src="Consulting/service-overview web development.png" alt="web development"><label>Web Development</label>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui liber
+                    </p>
+                    <a href="#">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+               </div>
+            </div>
+
+        </div>
+        <div class="row service-overview-row1">
+
+            <div class="col-lg col-md-6 col-sm-12 service-overview-content1 ">
+                <div class="service-overview-col">
+                    <div>
+                        <img src="Consulting/service-overview  mobile-app.png" alt="mobile app"><label>Mobile App Development</label>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui liber
+                    </p>
+                    <a href="#">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+               </div>
+            </div>
+            <div class="col-lg col-md-6 col-sm-12 service-overview-content1">
+                <div class="service-overview-col">
+                    <div>
+                        <img src="Consulting/service-overview  quality assurance.png" alt="Quality Assurance"><label>Quality Assurance</label>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui liber
+                    </p>
+                    <a href="#">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+               </div>
+            </div>
+            <div class="col-lg col-md-6 col-sm-12 service-overview-content1">
+                <div class="service-overview-col">
+                    <div>
+                        <img src="Consulting/service-overview  quality assurance.png" alt="Quality Assurance"><label>Quality Assurance</label>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui liber
+                    </p>
+                    <a href="#">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+               </div>
+            </div>
+
+        </div>
+
+    </div>
+    <br>
+</div>
+
+
+<!-- Section - 3 Why Choose us -->
+
+
+<div class="container why-choose-us">
+    <div class="why-choose-us-head">
+        <h1>Why <span style="color: #2CA068;">Choose Us</span></h1>
+    </div>
+
+    <div class="row why-choose-us-row1">
+        <div class="col-md-6 col-sm-12 why-choose-us-col1">
+            <h5>Championing Innovation, Delivering Excellence</h5>
+
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 why-choose-us-col2">
+            <div class="row why-choose-us-row-2">
+                <div class="col-md-6 col-sm-12">
+                    <h5>Greater visibility</h5>
+                    <p>
+                        Only an integrated cloud-based security stack is capable of providing the centralized visibility of cloud resources and data that is vital for defending against breaches and other potential threats. 
+                    </p>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <h5>Centralized security</h5>
+                    <p>
+                        Cloud security allows you to consolidate protection of cloud-based networks for streamlined, continuous monitoring and analysis of numerous devices, endpoints, and systems. 
+                    </p>
+                </div>
+               
+            </div>
+
+            <div class="row why-choose-us-row-2">
+                <div class="col-md-6 col-sm-12">
+                    <h5>Data protection</h5>
+                    <p>
+                        The best cloud computing providers will provide data security by design, offering strong access controls, encryption for data at rest and in transit, and data loss prevention.                    
+                    </p>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <h5>Reduced cost</h5>
+                    <p>
+                        With cloud security, you don’t have to pay for dedicated hardware to upgrade your security or use valuable resources to handle security updates and configurations.                     
+                    </p>
+                </div>
+               
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+<!-- Section - 4 Industry Served -->
+
+
+<div class="industry-served">
+    <div class=" industry-served-section-4">
+        <div class="container">
+            <h1 class="industry-served-head">Industry <span style="color: #2CA068;">Served</span></h1>
+          
+        </div>
+
+        <div class="container-fluid">
+            <div class="row overflow-auto industry-served-heading1">
+                <div class="col-12 industry-served-part-1 d-flex flex-nowrap ">
+                    <div class="two">
+                        <p data-content="Healthcare-content"  class="active-content-industry" >Healthcare</p>
+                    </div>
+                    <div class="two">
+                        <p data-content="finance-content">Finance</p>
+                    </div>
+                    <div class="two">
+                        <p data-content="travel-content">Travel</p>
+                    </div>
+                    <div class="two">
+                        <p data-content="education-content">Education</p>
+                    </div>
+                    <div class="two">
+                        <p data-content="media-content">Media</p>
+                    </div>
+                   
+        
+                </div>
+                <div class=" single-line">
+                    <hr>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="container hide-all-content">
+            <div id="Healthcare-content" class="content-below visible-content">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12  industry-served-image-container ">
+                        <img src="Consulting/Industry served Healthcare.png" alt="Care" class="img-fluid"> 
+                    </div>
+
+                    <div class="col-md-6 col-sm-12  industry-served-col2">
+                        <p>
+                            At JustLogix, we specialize in providing cutting-edge IT solutions across a multitude of industries, fostering innovation, growth, and digital transformation worldwide.Duis aute irure dolor in reprehenderit in volup tate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="finance-content" class="content-below">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12  industry-served-image-container ">
+                        <img src="Consulting/Industry served Healthcare.png" alt="Care" class="img-fluid"> 
+                    </div>
+
+                    <div class="col-md-6 col-sm-12  industry-served-col2">
+                        <p>
+                            At JustLogix, we specialize in providing cutting-edge IT solutions across a multitude of industries, fostering innovation, growth, and digital transformation worldwide.Duis aute irure dolor in reprehenderit in volup tate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="travel-content" class="content-below">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12  industry-served-image-container ">
+                        <img src="Consulting/Industry served Healthcare.png" alt="Care" class="img-fluid"> 
+                    </div>
+
+                    <div class="col-md-6 col-sm-12  industry-served-col2">
+                        <p>
+                            At JustLogix, we specialize in providing cutting-edge IT solutions across a multitude of industries, fostering innovation, growth, and digital transformation worldwide.Duis aute irure dolor in reprehenderit in volup tate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="education-content" class="content-below">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12  industry-served-image-container ">
+                        <img src="Consulting/Industry served Healthcare.png" alt="Care" class="img-fluid"> 
+                    </div>
+
+                    <div class="col-md-6 col-sm-12  industry-served-col2">
+                        <p>
+                            At JustLogix, we specialize in providing cutting-edge IT solutions across a multitude of industries, fostering innovation, growth, and digital transformation worldwide.Duis aute irure dolor in reprehenderit in volup tate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="media-content" class="content-below">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12  industry-served-image-container ">
+                        <img src="Consulting/Industry served Healthcare.png" alt="Care" class="img-fluid"> 
+                    </div>
+
+                    <div class="col-md-6 col-sm-12  industry-served-col2">
+                        <p>
+                            At JustLogix, we specialize in providing cutting-edge IT solutions across a multitude of industries, fostering innovation, growth, and digital transformation worldwide.Duis aute irure dolor in reprehenderit in volup tate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        
+    </div>
+   
+</div> 
+
+
+<!-- Section - 5 Cooperation Models We Offer -->
+
+<div class="bgcolor-cooperation-models"><br>
+    <div class="container">
+        <div class="cooperation-models-we-offer">
+    
+            <div class="Cooperation-models-head">
+                <h1>Cooperation Models <span style="color: #2CA068;">We Offer</span></h1>
+            </div>
+    
+            <div class="row cooperation-Models-cards">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="Staff-Augmentation ">
+                        <img src="Consulting/cooperation models-success.png" alt="icon1" class="icon1">
+                        <h3 class="Staff-Augmentation-heading">Staff Augmentation</h3>
+                        <p class="Staff-Augmentation-para">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasci voluptatem! Sed molestias animi ad quos modi qui. Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissi mos sed modi nihil aut Quisni porro id.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="Staff-Augmentation">
+                        <img src="Consulting/cooperation models-success.png" alt="icon1" class="icon1">
+                        <h3 class="Staff-Augmentation-heading">Dedicated Team</h3>
+                        <p class="Staff-Augmentation-para">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasci voluptatem! Sed molestias animi ad quos modi qui. Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissi mos sed modi nihil aut Quisni porro id.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="Staff-Augmentation">
+                        <img src="Consulting/cooperation models-success.png" alt="icon1" class="icon1">
+                        <h3 class="Staff-Augmentation-heading">Full Process Outsourcing</h3>
+                        <p class="Staff-Augmentation-para">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasci voluptatem! Sed molestias animi ad quos modi qui. Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissi mos sed modi nihil aut Quisni porro id.</p>
+                        
+                    </div>
+                </div>
+            </div> <br>
+    
+            <div class="row">
+                <div class="col text-center">
+                    <button class="Cooperation-Models-button">All Methodologies</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Section - 6 Leverage the Technical Expertise of  Our Developers -->
+
+   
+<div class="container">
+    <div class="leverage-technical-expertise">
+        <div class="row">
+      
+            <div class="col-md-4 mb-5">
+                <div class="leverage-technical-expertise-sec1">
+                    <h1>Leverage the Technical Expertise of <span style="color: #2CA068;">Our Developers</span></h1>
+                    
+                    <div class="technologies-we-work">
+                            <a href="#">All technologies we work with &rarr;</a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-7 leverage-technical-layout1">
+            
+                <div class="check"  >
+                    <div class="row leverage-technical-img-container">
+                        <div class="col-md-2">
+                            <img src="Consulting/wordpress.png" class="image1 img-fluid" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="Consulting/magento.png" class="image2 img-fluid" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="Consulting/vue 2.png" class="image3 img-fluid" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="Consulting/shopify.png" class="image4 img-fluid" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="Consulting/Angular (1).png" class="image5 img-fluid" />
+                        </div>
+                    </div>
+                
+                    <div class="row leverage-technical-img-container">
+                        <div class="col-md-2">
+                            <img src="Consulting/bigcommerce.png" class="image6 img-fluid" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="Consulting/react-native 2.png" class="image7 img-fluid" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="Consulting/drupal.png" class="image8 img-fluid" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="Consulting/WooCommerce.png" class="image9 img-fluid" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="Consulting/squarespace.png" class="image10 img-fluid" />
+                        </div>
+                    </div>
+                
+                    <div class="row leverage-technical-img-container">
+                        <div class="col-md-2">
+                            <img src="Consulting/bootstrap.png" class="image11 img-fluid" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="Consulting/HTML 5 (1).png" class="image12 img-fluid" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="Consulting/PHP (1).png" class="image13 img-fluid" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="Consulting/nodejs.png" class="image14 img-fluid" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="Consulting/Python (1).png" class="image15 img-fluid" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+
+            <div class="col-md-7 technical-img-container-mobile">          
+                <div class="check"  >
+                    <div class="row leverage-technical-img-container">
+                        <div class="col-md-3 col-3" >
+                            <img src="Consulting/wordpress.png"  class="image1 img-fluid" />
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <img src="Consulting/magento.png" class="image2 img-fluid" />
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <img src="Consulting/vue 2.png" class="image3 img-fluid" />
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <img src="Consulting/shopify.png" class="image4 img-fluid" />
+                        </div>
+                    
+                    </div>
+                
+                    <div class="row leverage-technical-img-container">
+                        <div class="col-md-3 col-3">
+                            <img src="Consulting/Angular (1).png" class="image5 img-fluid" />
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <img src="Consulting/bigcommerce.png" class="image6 img-fluid" />
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <img src="Consulting/react-native 2.png" class="image7 img-fluid" />
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <img src="Consulting/drupal.png" class="image8 img-fluid" />
+                        </div>
+                
+                    </div>
+                
+                    <div class="row leverage-technical-img-container">
+                        <div class="col-md-3 col-3">
+                            <img src="Consulting/WooCommerce.png" class="image9 img-fluid" />
+                        </div>
+                            <div class="col-md-3 col-3">
+                            <img src="Consulting/squarespace.png" class="image10 img-fluid" />
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <img src="Consulting/bootstrap.png" class="image11 img-fluid" />
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <img src="Consulting/HTML 5 (1).png" class="image12 img-fluid" />
+                        </div>
+            
+                    </div>
+
+                    <div class="row leverage-technical-img-container">
+
+                        <div class="col-md-3 col-3">
+                            <img src="Consulting/PHP (1).png" class="image13 img-fluid" />
+                        </div> 
+                        <div class="col-md-3 col-3">
+                            <img src="Consulting/nodejs.png" class="image14 img-fluid" />
+                        </div> 
+                        <div class="col-md-3 col-3">
+                            <img src="Consulting/Python (1).png" class="image15 img-fluid" />
+                        </div> 
+
+                        <div class="col-md-3 col-3">
+                            <img src="Consulting/Python (1).png" class="image15 img-fluid" />
+                        </div> 
+
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="technologies-we-work-2">
+                <a href="#">All technologies we work with &rarr;</a>
+            </div>
+
+
+
+    
+
+
+    </div>
+</div>
+  
+      
+    
+</div>    
+
+
+<!-- Section - 7 Our Case  Studies -->
+
+
+<div class="our-case-studies-bgcolor"><br>
+    <div class="container our-case-studies">
+        <div class="our-case-studies-head">
+            <h1>Our <span style="color: #2CA068;">Case Studies</span></h1>
+        </div>
+
+        <div class="our-case-studies-img">
+            <img src="Consulting/Our csase studies - Bidding Platform.png" alt="Our Case" class="img-fluid" >
+        </div>
+
+        <div class="our-case-studies-part1">
+           <div class="our-case-studies-box-content">
+                <h5>Construction Projects Bidding Platform</h5>
+                <p>
+                    We reinvent the eCommerce software solution experience with AI-driven chatbots and intelligent virtual assistants that provide personalized customerWe reinvent the eCommerce software solution experience with AI-driven chatbots and intelligent virtual assistants that provide personalized customer. We reinvent the eCommerce software solution experience with AI-driven chatbots and intelligent virtual assistants that provide personalized customer.
+                </p>
+                <a href="#"><span class="material-symbols-outlined">
+                    arrow_right_alt
+                    </span>
+                </a>  
+           </div>
+        </div>
+        
+        <div class="our-case-studies-view">
+            <a href="#">View More 
+                <span class="material-symbols-outlined">arrow_right_alt</span>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Section - 8 IT Consulting Benefits -->
+
+
+<div class="container it-conssulting-benefits">
+
+    <div class="it-conssulting-benefits-head">
+        <h1>IT Consulting <span style="color: #2CA068;">Benefits</span></h1>
+    </div>
+    
+    <div class="it-conssulting-dots">
+        <img src="Consulting/IT_consulting Dots.png" alt="Dots">
+    </div>
+
+    <div class="row it-conssulting-benefits-part1">
+        <div class="col-lg col-sm-12 it-conssulting-benefits-col1">
+            <img src="Consulting/IT-Consulting Robot.png" alt="Machine" class="img-fluid" >
+        </div>
+
+
+        <div class="col-lg col-sm-12 it-conssulting-benefits-col2">
+
+            <div class="row">
+                <div class="col-2">
+                    <img src="Consulting/IT-Conslting Greater Visibility.png" alt="Greater" class="img-fluid" >
+                </div>
+
+                <div class="col">
+                    <h5>Greater visibility</h5>
+                    <p>
+                        Only an integrated cloud-based security stack is capable of providing the centralized visibility of cloud resources and data that is vital for defending against breaches and other potential threats. 
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <img src="Consulting/IT-Consulting centralized security.png" alt="Greater" class="img-fluid" >
+                </div>
+
+                <div class="col">
+                    <h5>Centralized security</h5>
+                    <p>
+                        Cloud security allows you to consolidate protection of cloud-based networks for streamlined, continuous monitoring and analysis of numerous devices, endpoints, and systems. 
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <img src="Consulting/IT-Consulting Data Protection.png" alt="Greater" class="img-fluid" >
+                </div>
+
+                <div class="col">
+                    <h5>Data protection</h5>
+                    <p>
+                        The best cloud computing providers will provide data security by design, offering strong access controls, encryption for data at rest and in transit, and data loss prevention.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <img src="Consulting/IT-Conslting Greater Visibility.png" alt="Greater" class="img-fluid" >
+                </div>
+
+                <div class="col">
+                    <h5>Greater visibility</h5>
+                    <p>
+                        Only an integrated cloud-based security stack is capable of providing the centralized visibility of cloud resources and data that is vital for defending against breaches and other potential threats. 
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <img src="Consulting/IT-Consulting centralized security.png" alt="Greater" class="img-fluid" >
+                </div>
+
+                <div class="col">
+                    <h5>Centralized security</h5>
+                    <p>
+                        Cloud security allows you to consolidate protection of cloud-based networks for streamlined, continuous monitoring and analysis of numerous devices, endpoints, and systems. 
+                    </p>
+                </div>
+            </div>
+
+            <div class=" single-line"></div>
+        </div>
+
+       
+        <div class="it-conssulting-scribble">
+            <img src="Consulting/IT-consulting scribble 1.png" alt="scribble">
+       </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+
+    <script src="index.js" defer></script>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+</body>
+</html>

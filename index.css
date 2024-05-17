@@ -1,0 +1,1204 @@
+/* Hide the scrollbar */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border: none;
+}
+
+/* ----NavBar--- */
+
+p {
+  color: #676968;
+}
+
+.navbar_button {
+  border-radius: 8px;
+  background: linear-gradient(90deg, #23899c 13.04%, #2ca068 91.03%);
+  color: #fff;
+  border-radius: 7px;
+  font-weight: 700;
+  border: none !important;
+  font-size: 16px;
+}
+.navbar-button {
+  border-radius: 8px;
+  background: linear-gradient(90deg, #23899c 13.04%, #2ca068 91.03%);
+  color: #fff;
+  border-radius: 7px;
+  font-weight: 700;
+  border: none !important;
+  font-size: 16px;
+  width: 100% !important;
+  height: 34px !important;
+}
+
+.dropdown-toggle::after {
+  border-top-color: green !important;
+}
+
+/* Custom CSS to change carousel control button color to green */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: green !important;
+}
+
+/* Custom CSS to change carousel control button icon color to white */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: white;
+}
+
+/* Navbar logo styles */
+.nav-logo {
+  width: 210px !important;
+  height: 34px !important;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -950px;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+  padding-top: 50px;
+}
+
+.sidebar.active {
+  left: 0;
+}
+#navbarDropdownSolutions,
+#navbarDropdownIndustries,
+#navbarDropdownTechnologies,
+#navbarDropdownPortfolio {
+  color: #676968;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+
+#nav-a {
+  color: #676968 !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  text-align: left;
+}
+#nav-sidebar-ul {
+  font-weight: 400;
+  gap: 10px !important;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+
+.cancel-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.nav-logo-sidebar {
+  width: 138px !important;
+  height: 22.35px !important;
+  margin-top: -50px !important;
+  margin-left: 20px !important;
+}
+
+@media (max-width: 425px) {
+  .nav-logo {
+    height: 30px !important;
+    width: 140px !important;
+  }
+}
+
+/* ----NavBar--- */
+
+/* ---Section - 1 IT Consulting Services--- */
+
+.Consulting-services {
+  margin-top: 100px;
+}
+
+.Consulting-services-part1 h1 {
+  margin-bottom: 30px;
+}
+.Consulting-services-part2 img {
+  margin-top: 20px;
+}
+
+.Consulting-services-part1 p {
+  font-size: 14px;
+}
+
+.Consulting-btn1 button {
+  margin-top: 30px;
+  color: #fff !important;
+  background: linear-gradient(90deg, #248b97 0%, #2ca068 100%);
+  border: none;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  width: 140px;
+  height: 42px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+@media (max-width: 425px) {
+  .Consulting-services-part1 h1 {
+    font-size: xx-large;
+    text-align: center;
+  }
+  .Consulting-btn1 button {
+    width: 204px;
+    font-weight: 700;
+    margin-top: 0px;
+  }
+  .Consulting-btn1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Consulting-services-part2 img {
+    margin-top: 60px;
+  }
+  .Consulting-services-part1 h6 {
+    text-align: center;
+  }
+}
+
+/* ---Section - 1 IT Consulting Services--- */
+
+/* ---Section - 2 Service Overview--- */
+
+/* ---Section - 2 Service Overview--- */
+
+.service-overview-top {
+  margin-top: 100px;
+}
+
+.service-overview-head h1 {
+  position: relative;
+}
+
+.service-overview-para1 p {
+  font-size: 14px !important;
+}
+.service-overview-head h1::after {
+  content: "";
+  position: absolute;
+  margin-left: 15px;
+  width: 54px;
+  height: 4px;
+  margin-top: 25px;
+  border-radius: 5px;
+  background-color: #2ca068;
+}
+
+.service-overview-para1 p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.service-overview-content1 {
+  height: 272px;
+  margin-right: 30px;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.service-overview-col {
+  padding: 10px;
+  margin-top: 20px;
+}
+.service-overview-col label {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  position: absolute;
+  margin-top: 5px;
+}
+.service-overview-col p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.service-overview-col a,
+.service-overview-col a:hover {
+  text-decoration: none;
+  color: #2ca068;
+  font-weight: 600;
+}
+
+@media (max-width: 320px) {
+  .service-overview-col img {
+    margin-left: -10px !important;
+  }
+  .service-overview-content1 {
+    height: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+  .service-overview-top {
+    margin-top: 50px;
+  }
+  .service-overview-content1 {
+    margin-bottom: 30px !important;
+    margin-left: 18px;
+    width: 90% !important;
+  }
+  .service-overview-head h1 {
+    font-size: xx-large;
+  }
+  .service-overview-head h1::after {
+    width: 28px;
+    height: 3px;
+    border-radius: 50px;
+  }
+  .service-overview-col label {
+    font-size: large;
+  }
+}
+
+/* ----Section - 3 Why Choose us---- */
+
+.why-choose-us {
+  margin-top: 60px;
+}
+
+.why-choose-us-head h1 {
+  position: relative;
+}
+.why-choose-us-head h1::after {
+  content: "";
+  position: absolute;
+  margin-left: 15px;
+  width: 54px;
+  height: 4px;
+  margin-top: 25px;
+  border-radius: 5px;
+  background-color: #2ca068;
+}
+
+.why-choose-us-row1 {
+  margin-top: 50px !important;
+}
+
+.why-choose-us-col1 h5 {
+  margin-bottom: 20px;
+}
+
+.why-choose-us-col1 p {
+  font-size: 14px;
+}
+.why-choose-us-row-2 {
+  margin-bottom: 15px;
+}
+.why-choose-us-row-2 p {
+  font-size: 14px;
+}
+
+@media (max-width: 425px) {
+  .why-choose-us-head h1 {
+    font-size: xx-large;
+  }
+  .why-choose-us-head h1::after {
+    width: 28px;
+    height: 3px;
+    border-radius: 50px;
+    margin-top: 17px;
+  }
+  .why-choose-us-col2 {
+    margin-top: 15px !important;
+  }
+}
+
+/* ----Section - 3 Why Choose us---- */
+
+/* ---Section - 4 Industry Served */
+
+.industry-served {
+  margin-top: -40px !important;
+}
+
+.industry-served-head {
+  position: relative;
+  margin-top: 100px;
+}
+
+.industry-served-head::after {
+  content: "";
+  position: absolute;
+  top: 51%;
+  margin-left: 15px;
+  width: 54px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #2ca068;
+}
+
+.industry-served-heading1 {
+  margin-top: 40px !important;
+  /* margin-left: 20px !important; */
+}
+
+.industry-served-part-1 {
+  display: inline-block;
+  justify-content: space-evenly;
+}
+
+.industry-served-part-1 .two p {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+.industry-served-part-1 .two p.active-content-industry::after {
+  position: absolute;
+  content: "";
+  top: calc(100% - 4px);
+  left: 0;
+  width: 110%;
+  height: 3px;
+  margin-top: 5px;
+  border-radius: 2px;
+  margin-left: -2px;
+  background-color: #2ca068;
+}
+
+.active-content-industry {
+  font-weight: bold;
+  color: #2ca068;
+  cursor: pointer;
+}
+
+.content-below {
+  display: none;
+  margin-top: 20px;
+}
+
+.visible-content {
+  display: block;
+}
+.single-line {
+  margin-top: -14px !important;
+  position: relative;
+  z-index: -10;
+}
+.single-line hr {
+  height: 2px;
+  background: rgba(233, 233, 233, 1);
+  width: 83%;
+  margin-left: 100px;
+}
+.industry-served-col2 p {
+  font-size: 14px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.industry-served-col2 a,
+.industry-served-col2 a:hover {
+  text-decoration: none;
+  position: relative;
+  color: #2ca068;
+  font-weight: 600;
+}
+
+.industry-served-col2 a::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  background-color: #2ca068;
+  height: 2px;
+  border: 2px;
+  margin-top: 30px;
+}
+
+/* Hide scrollbar for WebKit browsers */
+.overflow-auto::-webkit-scrollbar {
+  display: none;
+}
+
+.industry-served-image-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  /* margin-top: 50px; */
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.industry-served-image-container img {
+  margin-right: 30px;
+  height: 400px;
+  width: 530px;
+}
+.industry-served-image-container::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .industry-served-section-4 {
+    margin-top: 150px !important;
+  }
+  .industry-served-part-1 .two {
+    padding-right: 40px;
+  }
+
+  .industry-served-head {
+    position: relative;
+    font-size: xx-large;
+  }
+  .industry-served {
+    margin-top: -100px !important;
+  }
+
+  .industry-served-image-container {
+    justify-content: left;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+  /* .single-line {
+
+        width: 0px !important;
+    } */
+
+  .industry-served-part-1 .two {
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .industry-served-col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px !important;
+  }
+  .industry-served-col2 a {
+    margin-top: -40px;
+  }
+
+  .industry-served-head::after {
+    top: 86%;
+    margin-left: 15px;
+    width: 28px;
+    height: 3px;
+  }
+
+  .single-line {
+    margin-top: -14px !important;
+    position: relative;
+    overflow-x: visible;
+  }
+
+  .single-line hr {
+    height: 2px;
+    background: rgba(233, 233, 233, 1);
+    width: calc(100% + 200px);
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .industry-served-head::after {
+    content: "";
+    position: absolute;
+    top: 75%;
+    margin-left: 15px;
+    width: 54px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #2ca068;
+  }
+}
+
+/* ----Section - 4 Industry Served---- */
+
+/* ----Section - 5 Cooperation Models We Offer---- */
+
+.bgcolor-cooperation-models {
+  background: #23899c0d;
+  margin-top: 108px;
+}
+.cooperation-models-we-offer {
+  width: 100%;
+}
+.Cooperation-models-head h1 {
+  position: relative;
+}
+
+.Cooperation-models-head h1::after {
+  content: "";
+  position: absolute;
+  top: 51%;
+  margin-left: 15px;
+  width: 54px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #2ca068;
+}
+
+.Staff-Augmentation {
+  width: 100%;
+  gap: 0px;
+  border-radius: 20px;
+  opacity: 0px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    #ffffff 100%
+  );
+  padding: 30px;
+}
+
+.custom-check-circle {
+  color: #2ca068;
+}
+.icon1 {
+  display: block;
+  margin: 0 auto; /* Center align the image */
+}
+.Staff-Augmentation-heading {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25.14px;
+  text-align: center;
+  margin-top: 25px;
+}
+.Staff-Augmentation-para {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #676968;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.cooperation-cardlist {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.11px;
+  color: #676968;
+}
+.cooperation-Models-cards {
+  margin-top: 50px !important;
+}
+
+.Cooperation-Models-button {
+  padding: 10px 20px 10px 20px;
+  gap: 10px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #23899c 13.04%, #2ca068 91.03%);
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22.63px;
+  color: #ffffff;
+  margin-top: 25px !important;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .bgcolor-cooperation-models {
+    background: #23899c0d;
+    margin-top: 50px;
+  }
+  .cooperation-models-we-offer {
+    margin-top: 50px;
+  }
+  .Cooperation-models-head h1 {
+    margin-top: -50px !important;
+    font-size: xx-large;
+  }
+  .Cooperation-models-head h1::after {
+    width: 28px;
+    height: 3px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+  .Staff-Augmentation {
+    gap: 0px;
+    border-radius: 20px;
+    opacity: 0px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      #ffffff 100%
+    );
+    box-shadow: 0px 0px 4px 0px #00000040;
+    padding: 30px;
+    margin-top: 20px;
+  }
+
+  .icon1 {
+    width: 25px;
+    height: 25px;
+  }
+  .Staff-Augmentation-heading {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.63px;
+    text-align: center !important;
+  }
+  .Staff-Augmentation-para {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+  }
+  .cooperation-cardlist {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.08px;
+    text-align: center;
+  }
+  .Cooperation-Models-button {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.14px;
+    margin-top: 15px !important;
+  }
+}
+
+/* ----Section - 5 Cooperation Models We Offer---- */
+
+/* ---Section - 6 Leverage the Technical Expertise of  Our Developers--- */
+
+.leverage-technical-expertise {
+  width: 100%;
+  height: auto;
+  margin-top: 50px
+}
+
+.leverage-technical-expertise-sec1 {
+  width: 100%;
+  height: auto;
+  margin-top: 130px;
+}
+
+.leverage-technical-expertise-sec1 h1 {
+  font-size: 48px;
+}
+
+.technologies-we-work {
+  margin-top: 60px;
+}
+
+.technologies-we-work a,
+.technologies-we-work a:hover,
+.technologies-we-work-2 a,
+.technologies-we-work-2 a:hover {
+  position: relative;
+  text-decoration: none;
+  color: #2ca068;
+  font-weight: 600;
+}
+
+.technologies-we-work a::before,
+.technologies-we-work-2 a::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 240px;
+  margin-top: 30px;
+  border-radius: 2px;
+  background-color: #2ca068;
+}
+
+.leverage-technical-layout1 {
+  background: #23899c0d !important;
+  border-radius: 12px;
+  height: 500px !important;
+  margin-left: 90px !important;
+  width: 650px;
+  margin-top: 25px !important;
+}
+
+.leverage-technical-img-container .col-md-2 {
+  width: 20%;
+  margin-top: 20px !important;
+}
+
+.check {
+  margin-left: 60px !important;
+  padding: 5px;
+  width: 100% !important;
+
+  margin-top: 50px !important;
+}
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6,
+.image7,
+.image8,
+.image9,
+.image10,
+.image11,
+.image12,
+.image13,
+.image14,
+.image15 {
+  width: 100px !important;
+}
+
+.technical-img-container-mobile {
+  display: none;
+}
+
+@media(min-width:1025px){
+    .technologies-we-work-2{
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .leverage-technical-expertise-sec1 h1{
+        font-size: 35px;
+        position: relative;
+    }
+    .leverage-technical-expertise-sec1 h1::after{
+        content: "";
+        position: absolute;
+        background-color: #2ca068;
+        width: 28px;
+        height: 3px;
+        border-radius: 50px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .technologies-we-work{
+        display: none;
+    }
+  .technical-img-container-mobile {
+    display: block !important;
+    background: #23899c0d !important;
+    gap: 0px;
+    border-radius: 12px 12px 12px 12px;
+    opacity: 0px;
+    margin-top: 0px !important;
+    width: 88% !important;
+    margin-left: 20px !important;
+    height: auto !important;
+  }
+
+  .leverage-technical-img-container {
+    margin-top: 30px !important;
+  }
+
+  .leverage-technical-expertise {
+    margin-top: 0px !important;
+  }
+  .leverage-technical-expertise-sec1 {
+    margin-top: 40px !important;
+  }
+
+  .leverage-technical-layout1 {
+    margin-top: -180px !important;
+    margin-left: 0px !important;
+    height: auto !important;
+    display: none !important;
+  }
+  .check {
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+    padding-bottom: 40px !important;
+  }
+  .technologies-we-work-2{
+    margin-top: 30px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ---Section - 6 Leverage the Technical Expertise of  Our Developers--- */
+
+/* ----Section - 7 Our Case  Studies---- */
+
+
+.our-case-studies-bgcolor{
+    margin-top: 60px;
+    background: rgba(35, 137, 156, 0.05);
+    height: 500px;
+}
+
+.our-case-studies-head h1{
+    margin-top: 10px;
+    position: relative;
+}
+
+.our-case-studies-head h1::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 52px;
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-top: 25px;
+    background-color: #2ca068;
+}
+
+.our-case-studies-part1{
+    margin-top: 50px;
+    width: 782px;
+    height: 226px;
+    top: 35px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.our-case-studies-box-content{
+    padding: 20px;
+}
+.our-case-studies-box-content h5{
+    margin-top: 15px;
+}
+.our-case-studies-box-content p{
+    font-size: 12px;
+    margin-top: 30px;
+}
+.our-case-studies-box-content span{
+    float: right;
+    color: #2ca068;
+}
+
+.our-case-studies-view{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.our-case-studies-view span{
+    position: absolute;
+    margin-left: 5px;
+}
+
+.our-case-studies-view a,
+.our-case-studies-view a:hover{
+    color: #2ca068;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.our-case-studies-img{
+    position: absolute;
+    z-index: -10;
+    margin-left: 720px;
+    height: 358px;
+    width: 480px;
+}
+
+@media(max-width:425px){
+    .our-case-studies-head h1{
+        font-size: xx-large;
+        margin-bottom: 30px;
+    }
+    .our-case-studies-head h1::after{
+        width: 28px;
+        height: 3px;
+        margin-top: 20px;
+    }
+    .our-case-studies-box-content a{
+        display: none;
+    }
+
+}
+
+@media (min-width:376px) and (max-width:425px){
+    .our-case-studies-bgcolor{
+        height: max-content;
+    }
+   
+    .our-case-studies-part1{
+        height: 350px;
+        width: 330px;
+        margin-top: 230px;
+        margin-left: 35px;
+        
+    }
+    .our-case-studies-img{
+        height: 240px;
+        width: 380px;
+        margin-left: 10px;
+    }
+    .our-case-studies-view{
+        margin-top: 0px;
+        padding: 50px;
+        margin-left: 20px;
+    }
+   
+}
+
+@media (min-width:321px) and (max-width:375px){
+    .our-case-studies-bgcolor{
+        height: max-content;
+    }
+   
+    .our-case-studies-part1{
+        height: 360px;
+        width: 320px;
+        margin-top: 190px;
+        margin-left: 20px;
+        
+    }
+    .our-case-studies-img{
+        height: 240px;
+        width: 350px;
+        margin-left: 5px;
+    }
+    .our-case-studies-view{
+        margin-top: 0px;
+        padding: 50px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:320px){
+    .our-case-studies-bgcolor{
+        height: max-content;
+    }
+   
+    .our-case-studies-part1{
+        height: 360px;
+        width: 250px;
+        margin-top: 190px;
+        margin-left: 20px;
+        
+    }
+    .our-case-studies-img{
+        height: 240px;
+        width: 280px;
+        margin-left: 5px;
+    }
+    .our-case-studies-view{
+        margin-top: 0px;
+        padding: 50px;
+        margin-left: 10px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1000px){
+    .our-case-studies-bgcolor{
+        height: max-content;
+    }
+   
+    .our-case-studies-part1{
+        height: 350px;
+        width: 330px;
+        margin-top: 230px;
+        margin-left: 305px;
+        
+    }
+    .our-case-studies-img{
+        height: 240px;
+        width: 380px;
+        margin-left: 280px;
+    }
+    .our-case-studies-view{
+        margin-top: 0px;
+        padding: 50px;
+        margin-left: 20px;
+    }
+}
+
+
+/* ----Section - 7 Our Case  Studies---- */
+
+/* ---- Section - 8 IT Consulting Benefits ---- */
+
+.it-conssulting-benefits{
+    margin-top: 70px;
+}
+.it-conssulting-benefits-head h1{
+    position: relative;
+}
+.it-conssulting-benefits-head h1::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 52px;
+    border-radius: 50px;
+    margin-left: 12px;
+    margin-top: 25px;
+    background-color: #2ca068;
+}
+
+.it-conssulting-benefits-part1{
+    padding-top: 40px;
+}
+
+.it-conssulting-benefits-col1 img{
+    height: 550px;
+    width: 530px;
+}
+
+.single-line{
+    margin-top: -290px !important;
+    position: relative;
+    height: 1px;
+    margin-left: -240px;
+    border: dashed #2ca068;
+    border-radius: 5px;
+    border-width: 1px;
+    transform: rotate(90deg);  
+    width: 110%;
+    z-index: -10;
+
+}
+
+.it-conssulting-benefits-col2{
+    margin-top: 10px !important;
+}
+.it-conssulting-benefits-col2 p{
+    font-size: 14px;
+}
+
+.it-conssulting-dots{
+    position: absolute;
+    z-index: -10;
+    margin-left: 37%;
+    margin-top: 16px;
+}
+
+.it-conssulting-scribble{
+    position: relative;
+    z-index: 10;
+    margin-left: -25px;
+    margin-top: -35px !important;
+}
+  
+@media(max-width:425px){
+    .it-conssulting-benefits{
+        margin-top: 20px;
+    }
+
+    .it-conssulting-benefits-head h1{
+        font-size: xx-large;
+    }
+    .it-conssulting-benefits-head h1::after{
+        width: 28px;
+        height: 3px;
+        margin-top: 20px;
+    }
+}
+
+@media(min-width:376px) and (max-width:425px){
+
+    .it-conssulting-benefits-col2{
+        margin-top: 80px !important;
+    }
+
+
+    .single-line{
+        margin-top: -350px !important;
+        margin-left: -280px;
+        width: 165% !important;
+
+    }
+    .it-conssulting-benefits-col1 img{
+        width: 380px !important;
+        height: 500px !important;
+        margin-left: 10px;
+    }
+    .it-conssulting-dots{
+        margin-left: 355px;
+    }
+    .it-conssulting-scribble{
+        margin-top: -430px !important;
+        margin-left: -10px;
+    }
+}
+
+@media(min-width:321px) and (max-width:375px){
+    .it-conssulting-benefits-col2{
+        margin-top: 80px !important;
+    }
+
+
+    .single-line{
+        margin-top: -390px !important;
+        margin-left: -320px;
+        width: 210% !important;
+
+    }
+    .it-conssulting-benefits-col1 img{
+        width: 330px !important;
+        height: 460px !important;
+        margin-left: 5px;
+    }
+    .it-conssulting-dots{
+        margin-left: 300px;
+    }
+    .it-conssulting-scribble{
+        margin-top: -480px !important;
+        margin-left: -15px;
+    }
+}
+
+@media(max-width:320px){
+    .it-conssulting-benefits-col2{
+        margin-top: 80px !important;
+    }
+
+
+    .single-line{
+        margin-top: -420px !important;
+        margin-left: -355px;
+        width: 270% !important;
+
+    }
+    .it-conssulting-benefits-col1 img{
+        width: 280px !important;
+        height: 350px !important;
+        margin-left: 5px;
+    }
+    .it-conssulting-dots{
+        margin-left: 250px;
+    }
+    .it-conssulting-scribble{
+        margin-top: -510px !important;
+        margin-left: -10px;
+    }
+}
+
+
+
+
+/* ---- Section - 8 IT Consulting Benefits ---- */
