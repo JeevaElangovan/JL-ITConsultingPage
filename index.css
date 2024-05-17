@@ -975,13 +975,13 @@ p {
         height: 360px;
         width: 280px;
         margin-top: 190px;
-        margin-left: 35px;
+        margin-left: 25px;
         
     }
     .our-case-studies-img{
         height: 240px;
         width: 320px;
-        margin-left: 15px;
+        margin-left: 5px;
     }
     .our-case-studies-view{
         margin-top: 0px;
@@ -1103,8 +1103,11 @@ p {
     margin-left: -25px;
     margin-top: -35px !important;
 }
+
+
   
 @media(max-width:425px){
+    
     .it-conssulting-benefits{
         margin-top: 20px;
     }
@@ -1117,21 +1120,24 @@ p {
         height: 3px;
         margin-top: 20px;
     }
+    .it-conssulting-benefits-col2{
+        margin-top: 50px !important;
+    }
+    .it-conssulting-benefits-col2 .col{
+        border-left: 1px dashed #2ca068;
+        margin-left: -10px;
+    }
+    .single-line{
+        display: none !important;
+    }
 }
 
-@media(min-width:376px) and (max-width:425px){
+ @media(min-width:376px) and (max-width:425px){
 
     .it-conssulting-benefits-col2{
         margin-top: 80px !important;
     }
 
-
-    .single-line{
-        margin-top: -350px !important;
-        margin-left: -280px;
-        width: 165% !important;
-
-    }
     .it-conssulting-benefits-col1 img{
         width: 380px !important;
         height: 500px !important;
@@ -1141,26 +1147,16 @@ p {
         margin-left: 355px;
     }
     .it-conssulting-scribble{
-        margin-top: -430px !important;
+        margin-top: -780px !important;
         margin-left: -10px;
     }
+    
 }
 
 @media (min-width:321px) and (max-width:375px){
 
     .it-conssulting-benefits-head h1{
         font-size: 30px;
-    }
-    .it-conssulting-benefits-col2{
-        margin-top: 80px !important;
-    }
-
-
-    .single-line{
-        margin-top: -415px !important;
-        margin-left: -340px;
-        width: 220% !important;
-
     }
     .it-conssulting-benefits-col1 img{
         width: 300px !important;
@@ -1171,23 +1167,14 @@ p {
         margin-left: 280px;
     }
     .it-conssulting-scribble{
-        margin-top: -460px !important;
+        margin-top: -830px !important;
         margin-left: -5px;
     }
+  
 }
 
 @media(max-width:320px){
-    .it-conssulting-benefits-col2{
-        margin-top: 80px !important;
-    }
-
-
-    .single-line{
-        margin-top: -420px !important;
-        margin-left: -355px;
-        width: 270% !important;
-
-    }
+    
     .it-conssulting-benefits-col1 img{
         width: 280px !important;
         height: 350px !important;
@@ -1197,10 +1184,11 @@ p {
         margin-left: 250px;
     }
     .it-conssulting-scribble{
-        margin-top: -510px !important;
+        margin-top: -900px !important;
         margin-left: -10px;
     }
-}
+  
+} 
 
 
 
