@@ -973,15 +973,15 @@ p {
    
     .our-case-studies-part1{
         height: 360px;
-        width: 320px;
+        width: 280px;
         margin-top: 190px;
-        margin-left: 20px;
+        margin-left: 35px;
         
     }
     .our-case-studies-img{
         height: 240px;
-        width: 350px;
-        margin-left: 5px;
+        width: 320px;
+        margin-left: 15px;
     }
     .our-case-studies-view{
         margin-top: 0px;
@@ -1146,29 +1146,33 @@ p {
     }
 }
 
-@media(min-width:321px) and (max-width:375px){
+@media (min-width:321px) and (max-width:375px){
+
+    .it-conssulting-benefits-head h1{
+        font-size: 30px;
+    }
     .it-conssulting-benefits-col2{
         margin-top: 80px !important;
     }
 
 
     .single-line{
-        margin-top: -390px !important;
-        margin-left: -320px;
-        width: 210% !important;
+        margin-top: -415px !important;
+        margin-left: -340px;
+        width: 220% !important;
 
     }
     .it-conssulting-benefits-col1 img{
-        width: 330px !important;
+        width: 300px !important;
         height: 460px !important;
-        margin-left: 5px;
+        margin-left: 15px;
     }
     .it-conssulting-dots{
-        margin-left: 300px;
+        margin-left: 280px;
     }
     .it-conssulting-scribble{
-        margin-top: -480px !important;
-        margin-left: -15px;
+        margin-top: -460px !important;
+        margin-left: -5px;
     }
 }
 
