@@ -1194,37 +1194,32 @@ p {
 /* ---- Section - 8 IT Consulting Benefits ---- */
 
 
+
+
 /* ----Section - 9 Our Testimonials---- */
 
 .our-testimonials-bg-color{
-    /* background: rgba(35, 137, 156, 0.05); */
-
-}
-
-.Our-testimonials{
+    background: rgba(35, 137, 156, 0.05);
+    height: 600px;
+    
+  
+  }
+  
+  .Our-testimonials{
     position: relative;
     margin-top: 50px;
-
-}
-
-
-.testimonial-container {
-    width: max-content;
-    margin: auto;
-    height: 370px;
-    text-align: center;
-    /* z-index: 10; */
-    /* margin-top: 100px; */
-    position: relative;
-
-    
-}
-
-.Our-testimonials-head h1{
+  
+  }
+  
+  .Our-testimonials-head {
+    padding-top: 20px;
+  }
+  
+  .Our-testimonials-head h1{
     position: relative;
     margin-bottom: 30px;
-}
-.Our-testimonials-head h1::after{
+  }
+  .Our-testimonials-head h1::after{
     content: "";
     position: absolute;
     background-color: #2CA068;
@@ -1233,59 +1228,95 @@ p {
     margin-left: 6px;
     margin-top: 25px;
     border-radius: 50px;
-}
-
-.testimonial-content {
-    margin-top: 73px;
+  }
+  
+  
+  .testimonial-container {
+    /* width: max-content; */
+    /* margin: auto; */
+    /* height: 370px; */
+    text-align: center;
+    z-index: -10 !important;
+    margin-left: 100px;
+    /* margin-top: 100px; */
+    /* position: absolute; */
+  
+  
+    
+  }
+  
+  .testimonial-content {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 100px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 30px;
-    margin-bottom: 20px;
     height: 350px;
     width: 750px;
     box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.25);
-
-}
-.Our-testimonials-img-dot img{
-float: left;
-margin-top: 10px;
-margin-left: 20px;
-
-}
-.Our-testimonials-img-line img {
-   margin-top: 20px;
+    position: relative;
+    background-color: #ffffff;
+  
+  }
+  
+  .testimonial-frame-content-1{
+    position: absolute;
+    z-index: -1;
+    width: 720px;
+    height: 371px;
+    top: 110px;
+    left: 175px;
+    gap: 0px;
+    border-radius: 30px;
+    opacity: 0px;
+    border: 1px dashed rgba(177, 174, 174, 1);
+  
+  
+  }
+  
+  
+  
+  .Our-testimonials-img-dot img{
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+  
+  }
+  .Our-testimonials-img-line img {
+    margin-top: 20px;
     margin-bottom: 10px;
     margin-left: -20px;
    
-}
-
-
-
-.testimonial-arrow-right{
+  }
+  
+  
+  
+  .testimonial-arrow-right{
   transform: rotate(270deg);
   cursor: pointer;
   font-size:40px !important;
   color: #C4C4C4;
   
-
-}
-.testimonial-arrow-left{
-
+  
+  }
+  .testimonial-arrow-left{
+  
   transform: rotate(90deg);
   cursor: pointer;
   font-size:40px !important;
   color: #C4C4C4;
-}
-
-.testimonial-arrows span:hover{
+  }
+  
+  .testimonial-arrows span:hover{
     color: #706E72;
-}
-.testimonial-arrows{
+  }
+  .testimonial-arrows{
     float: right;  
-    margin-right: 20px;
-}
-
-.testimonial-frame {
+    margin-right: 200px;
+  }
+  
+  .testimonial-frame {
     padding: 10px;
     position: absolute;
     display: flex;
@@ -1295,15 +1326,20 @@ margin-left: 20px;
     margin-top: -30px;
     
     
-}
-
-.testimonial-women-img{
+  }
+  
+  .testimonial-women-img{
     position: absolute;
     margin-top: -120px;
-    margin-left: 90px;
-}
-
-@media(max-width:425px){
+    margin-left: 120px;
+  }
+  
+  
+  
+  
+  
+  
+  @media(max-width:425px){
     .Our-testimonials{
         margin-top: 50px;
     }
@@ -1315,63 +1351,78 @@ margin-left: 20px;
         height: 3px;
         margin-top: 20px;
     }
-
-    .testimonial-frame{
+  
+    .testimonial-frame-content-1{
         display: none;
     }
     .testimonial-content{
         margin-top: 0px;
+        margin-left: 0px;
     }
     .testimonial-content p{
         font-size: 14px;
     }
-}
-
-@media (min-width:376px) and (max-width:425px){
+  }
+  
+  @media (min-width:376px) and (max-width:425px){
     .testimonial-content{
         height: 400px;
         width: 360px;
+        margin-left: -70px;
     }
     .Our-testimonials-img-line img{
         width: 360px ;
     }
     .testimonial-women-img img{
-        height: 80px;
-        margin-top: 90px;
-        margin-left: -100px;
+        height: 90px;
+        margin-top: 25px;
+        margin-left: -120px;
     }
-}
-@media (min-width:321px) and (max-width:375px){
+    .testimonial-arrows{
+      margin-right: 20px;
+    }
+  }
+  @media (min-width:321px) and (max-width:375px){
     .testimonial-content{
         height: 420px;
         width: 320px;
+        margin-left: -90px;
     }
     .Our-testimonials-img-line img{
         width: 320px ;
     }
     .testimonial-women-img img{
         height: 80px;
-        margin-top: 120px;
-        margin-left: -100px;
+        margin-top: 40px;
+        margin-left: -130px;
     }
-}
-@media (max-width:320px){
+    .testimonial-arrows{
+      margin-right: 20px;
+    }
+  }
+  @media (max-width:320px){
+    .our-testimonials-bg-color{
+      height: 650px;
+    }
     .testimonial-content{
         height: 480px;
         width: 260px;
-        margin-left: 20px;
+        margin-left:-80px;
     }
     .Our-testimonials-img-line img{
         width: 260px ;
     }
     .testimonial-women-img img{
         height: 80px;
-        margin-top: 170px;
-        margin-left: -100px;
+        margin-top: 50px;
+        margin-left: -125px;
     }
-}
-
-@media(min-width:769px) and (max-width:1124px){
+    .testimonial-arrows{
+      margin-right: 20px;
+    }
+  }
+  
+  @media(min-width:769px) and (max-width:1124px){
     .Our-testimonials{
         margin-top: 100px;
     }
@@ -1379,11 +1430,14 @@ margin-left: 20px;
         margin-left: -100px;
     }
     .testimonial-women-img img{
-        margin-left: -100px;
+        margin-left: 0px;
     }
-}
-
-/* ----Section - 9 Our Testimonials---- */
+    .testimonial-arrows{
+      margin-right: 20px;
+    }
+  }
+  
+  /* ----Section - 9 Our Testimonials---- */
 
 
 /* ----Section - 10 News and Blogs---- */
@@ -1458,7 +1512,7 @@ margin-left: 20px;
 
 @media(max-width:425px){
     .news-and-blogs{
-        margin-top: 150px;
+        margin-top:20px;
     }
     .news-and-blogs-head h1{
         font-size: xx-large;
@@ -1579,34 +1633,35 @@ margin-left: 20px;
    }
    .section13heading{
     width: 100%;
-    font-family: 'Source Sans Pro',sans-serif;
-    font-size: 48px;
-    font-weight: 600;
+    /* font-size: 48px; */
+    /* font-weight: 600; */
     line-height: 60.34px;
     text-align: left;
     color: #000000;
    }
    .section13heading span{
-    font-family: 'Source Sans Pro',sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 60.34px;
+    /* font-size: 48px; */
+    /* font-weight: 700; */
     text-align: center;
     color: #2CA068;
    }
-   .section13heading img{
-    width: 54px;
-    height: 3px;
-    gap: 0px;
+   .section13heading::after{
+    content: "";
+    background-color: #2CA068;
+    height: 4px;
+    width: 55px;
+    position: absolute;
     border-radius: 50px;
+    margin-top: 30px;
+    margin-left: 10px;
    }
+  
   .accordion {
     overflow: hidden;
     margin-top: 30px;
   }
   .accordion-header span{
     width: 100%;
-    font-family: 'Source Sans Pro',sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 20.11px;
@@ -1710,6 +1765,11 @@ margin-left: 20px;
       font-weight: 600;
       line-height: 40.22px;
       text-align: left;
+     }
+     .section13heading::after{
+        width: 28px;
+        height: 3px;
+        margin-top: 20px;
      }
      .section13heading span{
       font-size: 32px;
