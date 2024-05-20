@@ -479,6 +479,9 @@ p {
   .industry-served-image-container {
     justify-content: left;
   }
+  .industry-served-image-container img{
+    height: 280px;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 425px) {
