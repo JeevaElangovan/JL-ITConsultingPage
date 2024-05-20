@@ -920,7 +920,7 @@ p {
 .our-case-studies-img{
     position: absolute;
     z-index: -10;
-    margin-left: 720px;
+    margin-left: 700px;
     height: 358px;
     width: 480px;
 }
@@ -1191,6 +1191,279 @@ p {
 } 
 
 
-
-
 /* ---- Section - 8 IT Consulting Benefits ---- */
+
+
+/* ----Section - 9 Our Testimonials---- */
+
+.testimonial-container {
+    width: max-content;
+    margin: auto;
+    height: 370px;
+    text-align: center;
+    /* z-index: 10; */
+    /* margin-top: 100px; */
+    position: relative;
+
+    
+}
+
+.Our-testimonials-head h1{
+    position: relative;
+}
+.Our-testimonials-head h1::after{
+    content: "";
+    position: absolute;
+    background-color: #2CA068;
+    width: 50px;
+    height: 4px;
+    margin-left: 6px;
+    margin-top: 25px;
+    border-radius: 50px;
+}
+
+.testimonial-content {
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    height: 370px;
+    width: 750px;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.25);
+
+}
+.Our-testimonials-img-dot img{
+float: left;
+margin-top: 10px;
+margin-left: 20px;
+
+}
+.Our-testimonials-img-line img {
+   margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: -20px;
+   
+}
+
+
+
+.testimonial-arrow-right{
+  transform: rotate(270deg);
+  cursor: pointer;
+  font-size:40px !important;
+  color: #C4C4C4;
+  
+
+}
+.testimonial-arrow-left{
+
+  transform: rotate(90deg);
+  cursor: pointer;
+  font-size:40px !important;
+  color: #C4C4C4;
+}
+
+.testimonial-arrows span:hover{
+    color: #706E72;
+}
+.testimonial-arrows{
+    float: right;  
+    margin-right: 20px;
+}
+
+.testimonial-frame {
+    background-image: url('Consulting/Our-testimonials - frame.png') no-repeat center center;
+    padding: 10px;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 200px; */
+    /* margin-left: 300px; */
+}
+
+
+/* ----Section - 9 Our Testimonials---- */
+
+
+/* ----Section - 10 News and Blogs---- */
+
+.news-and-blogs{
+    margin-top: 100px;
+}
+
+.news-and-blogs-head h1{
+    position: relative;
+}
+
+.news-and-blogs-head h1::after{
+    content: "";
+    position: absolute;
+    background-color: #2CA068;
+    width: 50px;
+    height: 4px;
+    margin-left: 6px;
+    margin-top: 25px;
+    border-radius: 50px;
+}
+
+.news-and-blogs-content{
+    margin-top: 50px;
+}
+
+.news-and-blogs-row1{
+    padding-top: 20px ;
+    /* width: 350px; */
+    
+    
+}
+
+.news-and-blogs-content-1{
+    width: 350px !important;
+    height: 450px;
+    margin-left: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.news-and-blogs-content-1 .news-and-blogs-img{
+    /* width: 360px !important; */
+    margin-left: -15px;
+}
+
+.news-and-blogs-date p{
+    margin-left: 60px;
+}
+
+.news-and-blogs-content-2{
+    margin-top: 20px;
+}
+.news-and-blogs-row1 label{
+    margin-left: 5px ;
+    color: #706E72;
+}
+.news-and-blogs-content-2 p{
+    font-size: 14px;
+}
+.news-and-blogs-content-2 a,
+.news-and-blogs-content-2 a:hover{
+    text-decoration: none;
+    font-weight: 600;
+    color: #2CA068;
+}
+.news-and-blogs-content-2 span{
+    position: absolute;
+}
+
+@media(max-width:425px){
+    .news-and-blogs-head h1{
+        font-size: xx-large;
+    }
+    .news-and-blogs-head h1::after{
+        width: 28px;
+        height: 3px;
+        margin-top: 17px;
+    }
+    .news-and-blogs-content-1{
+        margin-bottom: 25px;
+    }
+}
+
+@media(max-width:320px){
+    .news-and-blogs-content{
+        width: 280px;
+    }
+    .news-and-blogs-content-1{
+        height: 460px;
+        width: 200px !important;
+        margin-left: 10px;
+    }
+    .news-and-blogs-img{
+        width: 300px;
+    }
+    .news-and-blogs-row1{
+        /* width: 250px !important; */
+    }
+    
+    .news-and-blogs-date p{
+        margin-left: 30px ;
+        width: 100%;
+    }
+
+    .news-and-blogs-content-2{
+        margin-top: 20px;
+    }
+    .news-and-blogs-row1 label{
+        margin-left: 10px ;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+@media (min-width:321px) and (max-width:375px){
+    .news-and-blogs-content{
+        width: 320px;
+    }
+    .news-and-blogs-content-1{
+        height: 430px;
+        width: 200px !important;
+        margin-left: 15px;
+    }
+    .news-and-blogs-img{
+        width: 335px;
+    }
+    .news-and-blogs-row1{
+        width: 250px !important;
+    }
+    .news-and-blogs-date p{
+        position: absolute;
+        margin-left: 80px !important;
+        width: 100%;
+    }
+
+    .news-and-blogs-content-2{
+        margin-top: 20px;
+    }
+    .news-and-blogs-row1 label{
+        margin-left: 10px ;
+        width: 100%;
+        position: absolute;
+    }
+}
+@media (min-width:376px) and (max-width:425px){
+    .news-and-blogs-content{
+        width: 340px;
+    }
+    .news-and-blogs-content-1{
+        height: 430px;
+        width: 200px !important;
+        margin-left: 30px;
+    }
+    .news-and-blogs-img{
+        width: 340px;
+    }
+    .news-and-blogs-row1{
+        width: 250px !important;
+    }
+    .news-and-blogs-date p{
+        position: absolute;
+        margin-left: 80px !important;
+        width: 100%;
+    }
+
+    .news-and-blogs-content-2{
+        margin-top: 20px;
+    }
+    .news-and-blogs-row1 label{
+        margin-left: 10px ;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+/* ----Section - 10 News and Blogs---- */
+
+
+
