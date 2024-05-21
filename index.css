@@ -2197,6 +2197,9 @@ p {
   .footer-text1, .footer-text2 {
     font-size: 14px;
   }
+  .footer-text1{
+    margin-top: 8px;
+  }
   .footer-menu {
     display: block; 
   }
