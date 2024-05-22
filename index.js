@@ -93,93 +93,149 @@ function redirectToPage() {
 // Section - 9 Our Testimonials
 
 
-const testimonials = [
-    {
-        text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!",
-        name: "Mizara Mona",
-        position: "Project Manager",
-        rating: "⭐⭐⭐⭐⭐"
-    },
-    {
-        text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!",
-        name: "John Doe",
-        position: "Software Engineer",
-        rating: "⭐⭐⭐⭐"
-    },
-    {
-        text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!",
-        name: "Jane Smith",
-        position: "Graphic Designer",
-        rating: "⭐⭐⭐⭐⭐"
+// const testimonials = [
+//     {
+//         text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!",
+//         name: "Mizara Mona",
+//         position: "Project Manager",
+//         rating: "bi-star-fill"
+//     },
+//     {
+//         text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!",
+//         name: "John Doe",
+//         position: "Software Engineer",
+//         rating: "⭐⭐⭐⭐"
+//     },
+//     {
+//         text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!",
+//         name: "Jane Smith",
+//         position: "Graphic Designer",
+//         rating: "⭐⭐⭐⭐⭐"
+//     }
+// ];
+
+// let currentTestimonial = 0;
+
+// function updateTestimonial(index) {
+//     document.getElementById('testimonial-text').innerText = testimonials[index].text;
+//     document.getElementById('testimonial-name').innerText = testimonials[index].name;
+//     document.getElementById('testimonial-position').innerText = testimonials[index].position;
+//     document.getElementById('testimonial-rating').innerText = testimonials[index].rating;
+// }
+
+// document.getElementById('testimonial-arrow-left').addEventListener('click', () => {
+//     currentTestimonial = (currentTestimonial === 0) ? testimonials.length - 1 : currentTestimonial - 1;
+//     updateTestimonial(currentTestimonial);
+// });
+
+// document.getElementById('testimonial-arrow-right').addEventListener('click', () => {
+//     currentTestimonial = (currentTestimonial === testimonials.length - 1) ? 0 : currentTestimonial + 1;
+//     updateTestimonial(currentTestimonial);
+// });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const testimonials = [
+        {
+            text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam.",
+            name: "Mizara Mona",
+            position: "Project Manager",
+            rating: 5
+        },
+        {
+            text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam.",
+            name: "John Doe",
+            position: "Software Engineer",
+            rating: 5
+        },
+        {
+            text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam.",
+            name: "Jane Smith",
+            position: "Graphic Designer",
+            rating: 5
+        }
+    ];
+
+    let currentIndex = 0;
+
+    function renderTestimonial(index) {
+        const testimonial = testimonials[index];
+        document.getElementById('testimonial-text').textContent = testimonial.text;
+        document.getElementById('testimonial-name').textContent = testimonial.name;
+        document.getElementById('testimonial-position').textContent = testimonial.position;
+
+        const ratingElement = document.getElementById('testimonial-rating');
+        ratingElement.innerHTML = '';
+        for (let i = 0; i < 5; i++) {
+            const star = document.createElement('i');
+            star.classList.add('bi');
+            star.classList.add(i < testimonial.rating ? 'bi-star-fill' : 'bi-star-fill');
+            ratingElement.appendChild(star);
+        }
     }
-];
 
-let currentTestimonial = 0;
+    document.getElementById('testimonial-arrow-right').addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        renderTestimonial(currentIndex);
+    });
 
-function updateTestimonial(index) {
-    document.getElementById('testimonial-text').innerText = testimonials[index].text;
-    document.getElementById('testimonial-name').innerText = testimonials[index].name;
-    document.getElementById('testimonial-position').innerText = testimonials[index].position;
-    document.getElementById('testimonial-rating').innerText = testimonials[index].rating;
-}
+    document.getElementById('testimonial-arrow-left').addEventListener('click', function() {
+        currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+        renderTestimonial(currentIndex);
+    });
 
-document.getElementById('testimonial-arrow-left').addEventListener('click', () => {
-    currentTestimonial = (currentTestimonial === 0) ? testimonials.length - 1 : currentTestimonial - 1;
-    updateTestimonial(currentTestimonial);
+    renderTestimonial(currentIndex);
 });
-
-document.getElementById('testimonial-arrow-right').addEventListener('click', () => {
-    currentTestimonial = (currentTestimonial === testimonials.length - 1) ? 0 : currentTestimonial + 1;
-    updateTestimonial(currentTestimonial);
-});
-
-
 
 //  Section - 11 Frequently asked Questions
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const accordionHeaders = document.querySelectorAll('.accordion-header');
-  
+    let currentOpenAccordion = null;
+
     accordionHeaders.forEach(header => {
-        header.addEventListener('click', function() {
+        header.addEventListener('click', function () {
             const accordionItem = this.parentElement;
             const accordionContent = accordionItem.querySelector('.accordion-content');
             const accordionToggle = accordionItem.querySelector('.accordion-toggle').querySelector('.arrow');
-  
+
+            // If there's an open accordion and it's not the current one, close it
+            if (currentOpenAccordion && currentOpenAccordion !== accordionItem) {
+                const openContent = currentOpenAccordion.querySelector('.accordion-content');
+                const openToggle = currentOpenAccordion.querySelector('.accordion-toggle .arrow');
+
+                openContent.style.display = 'none';
+                openToggle.classList.remove('up');
+                openToggle.classList.add('down');
+
+                // Remove active class and reset styles for the previously open accordion header
+                currentOpenAccordion.querySelector('.accordion-header').classList.remove('active');
+                openToggle.classList.remove('white');
+                currentOpenAccordion.querySelector('.accordion-header').classList.remove('white');
+            }
+
+            // Toggle the current accordion content and arrow
             if (accordionContent.style.display === 'block') {
                 accordionContent.style.display = 'none';
                 accordionToggle.classList.remove('up');
                 accordionToggle.classList.add('down');
+                this.classList.remove('active');
+                accordionToggle.classList.remove('white');
+                this.classList.remove('white');
+
+                currentOpenAccordion = null;
             } else {
                 accordionContent.style.display = 'block';
                 accordionToggle.classList.remove('down');
                 accordionToggle.classList.add('up');
+                this.classList.add('active');
+                accordionToggle.classList.add('white');
+                this.classList.add('white');
+
+                currentOpenAccordion = accordionItem;
             }
         });
     });
-  });
-  
-  // script.js
-  document.addEventListener('DOMContentLoaded', function() {
-    const accordionItems = document.querySelectorAll('.accordion-header');
-  
-    accordionItems.forEach(item => {
-        item.addEventListener('click', function() {
-            // Toggle active class on the clicked accordion item
-            this.classList.toggle('active');
-            
-            // Toggle arrow color
-            const accordionToggle = this.querySelector('.accordion-toggle').querySelector('.arrow');
-            accordionToggle.classList.toggle('white');
-  
-            // Toggle text color
-            const accordionHeader = this.querySelector('.accordion-header');
-            accordionHeader.classList.toggle('white');
-        });
-    });
-  });
-
-
+});
   // Form ====>
 
 // Function to validate the form
@@ -220,21 +276,55 @@ function validateForm() {
 
 // Footer 
 
+// document.addEventListener("DOMContentLoaded", function() {
+//     // Get all footer columns
+//     var footerColumns = document.querySelectorAll('#footer-column');
+  
+//     // Loop through each footer column
+//     footerColumns.forEach(function(column) {
+//         // Find the h3 element
+//         var h3 = column.querySelector('#footer-head');
+  
+//         // Find the ul element
+//         var menu = column.querySelector('#footer-menu');
+  
+//         // Add click event listener to the icon
+//         h3.addEventListener('click', function() {
+//             // Toggle the active class on the menu when the icon is clicked
+//             menu.classList.toggle('active-footer');
+  
+//             // Toggle the icon between chevron-down and chevron-up
+//             h3.querySelector('i').classList.toggle('bi-chevron-down');
+//             h3.querySelector('i').classList.toggle('bi-chevron-up');
+//         });
+//     });
+//   });
+
+
 document.addEventListener("DOMContentLoaded", function() {
     // Get all footer columns
-    var footerColumns = document.querySelectorAll('#footer-column');
-  
+    var footerColumns = document.querySelectorAll('.footer-column');
+
     // Loop through each footer column
     footerColumns.forEach(function(column) {
         // Find the h3 element
-        var h3 = column.querySelector('#footer-head');
+        var h3 = column.querySelector('h3');
   
         // Find the ul element
-        var menu = column.querySelector('#footer-menu');
+        var menu = column.querySelector('.footer-menu');
   
-        // Add click event listener to the icon
+        // Add click event listener to the header
         h3.addEventListener('click', function() {
-            // Toggle the active class on the menu when the icon is clicked
+            // Close all other menus
+            footerColumns.forEach(function(otherColumn) {
+                if (otherColumn !== column) {
+                    otherColumn.querySelector('.footer-menu').classList.remove('active-footer');
+                    otherColumn.querySelector('i').classList.remove('bi-chevron-up');
+                    otherColumn.querySelector('i').classList.add('bi-chevron-down');
+                }
+            });
+
+            // Toggle the active class on the menu when the header is clicked
             menu.classList.toggle('active-footer');
   
             // Toggle the icon between chevron-down and chevron-up
@@ -242,4 +332,4 @@ document.addEventListener("DOMContentLoaded", function() {
             h3.querySelector('i').classList.toggle('bi-chevron-up');
         });
     });
-  });
+});
