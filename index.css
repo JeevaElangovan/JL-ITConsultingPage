@@ -133,7 +133,7 @@ p {
 /* ---Section - 1 IT Consulting Services--- */
 
 .Consulting-services {
-  margin-top: 100px;
+  margin-top: 130px;
 }
 
 .Consulting-services-part1 h1 {
@@ -306,6 +306,7 @@ p {
 
 .why-choose-us-col1 h5 {
   margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .why-choose-us-col1 p {
@@ -425,12 +426,18 @@ p {
   position: relative;
   color: #2ca068;
   font-weight: 600;
+  font-size: 16px;
+}
+
+.industry-served-col2 span{
+    position: absolute;
+    /* margin-top: 5px; */
 }
 
 .industry-served-col2 a::before {
   position: absolute;
   content: "";
-  width: 100px;
+  width: 110px;
   background-color: #2ca068;
   height: 2px;
   border: 2px;
@@ -717,6 +724,9 @@ p {
 .technologies-we-work {
   margin-top: 60px;
 }
+.technologies-we-work span{
+    position: absolute;
+}
 
 .technologies-we-work a,
 .technologies-we-work a:hover,
@@ -739,18 +749,22 @@ p {
   background-color: #2ca068;
 }
 
+.technologies-we-work-2 span{
+    position: absolute;
+}
+
 .leverage-technical-layout1 {
   background: #23899c0d !important;
   border-radius: 12px;
-  height: 500px !important;
+  height: 450px !important;
   margin-left: 90px !important;
   width: 650px;
-  margin-top: 25px !important;
+  margin-top: 45px !important;
 }
 
 .leverage-technical-img-container .col-md-2 {
   width: 20%;
-  margin-top: 20px !important;
+  margin-top: 30px !important;
 }
 
 .check {
@@ -923,7 +937,7 @@ p {
 .our-case-studies-img{
     position: absolute;
     z-index: -10;
-    margin-left: 700px;
+    margin-left: 685px;
     height: 358px;
     width: 480px;
 }
@@ -1293,6 +1307,9 @@ p {
    
   }
   
+  #testimonial-text{
+    margin-top: 30px;
+  }
   
   
   .testimonial-arrow-right{
@@ -1336,7 +1353,10 @@ p {
     margin-top: -120px;
     margin-left: 120px;
   }
-  
+  .bi-star-fill{
+    color: gold;
+    padding: 2px;
+  }
   
   
   
@@ -1502,6 +1522,7 @@ p {
 }
 .news-and-blogs-content-2 p{
     font-size: 14px;
+    margin-top: 15px;
 }
 .news-and-blogs-content-2 a,
 .news-and-blogs-content-2 a:hover{
@@ -1958,7 +1979,9 @@ p {
   }
   
   .form-text {
-    font-size: 24px;
+    color: black !important;
+    font-size: 24px !important;
+    font-weight: 700;
   }
   
   .form-line {
@@ -2199,6 +2222,8 @@ p {
   }
   .footer-text1{
     margin-top: 8px;
+    text-decoration: underline;
+    cursor: pointer;
   }
   .footer-menu {
     display: block; 
