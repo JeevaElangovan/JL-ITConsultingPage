@@ -132,6 +132,60 @@ function redirectToPage() {
 //     currentTestimonial = (currentTestimonial === testimonials.length - 1) ? 0 : currentTestimonial + 1;
 //     updateTestimonial(currentTestimonial);
 // });
+// =========================
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const testimonials = [
+//         {
+//             text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam.",
+//             name: "Mizara Mona",
+//             position: "Project Manager",
+//             rating: 5
+//         },
+//         {
+//             text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam.",
+//             name: "John Doe",
+//             position: "Software Engineer",
+//             rating: 5
+//         },
+//         {
+//             text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam.",
+//             name: "Jane Smith",
+//             position: "Graphic Designer",
+//             rating: 5
+//         }
+//     ];
+
+//     let currentIndex = 0;
+
+//     function renderTestimonial(index) {
+//         const testimonial = testimonials[index];
+//         document.getElementById('testimonial-text').textContent = testimonial.text;
+//         document.getElementById('testimonial-name').textContent = testimonial.name;
+//         document.getElementById('testimonial-position').textContent = testimonial.position;
+
+//         const ratingElement = document.getElementById('testimonial-rating');
+//         ratingElement.innerHTML = '';
+//         for (let i = 0; i < 5; i++) {
+//             const star = document.createElement('i');
+//             star.classList.add('bi');
+//             star.classList.add(i < testimonial.rating ? 'bi-star-fill' : 'bi-star-fill');
+//             ratingElement.appendChild(star);
+//         }
+//     }
+
+//     document.getElementById('testimonial-arrow-right').addEventListener('click', function() {
+//         currentIndex = (currentIndex + 1) % testimonials.length;
+//         renderTestimonial(currentIndex);
+//     });
+
+//     document.getElementById('testimonial-arrow-left').addEventListener('click', function() {
+//         currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+//         renderTestimonial(currentIndex);
+//     });
+
+//     renderTestimonial(currentIndex);
+// });
 
 document.addEventListener('DOMContentLoaded', function() {
     const testimonials = [
@@ -171,16 +225,24 @@ document.addEventListener('DOMContentLoaded', function() {
             star.classList.add(i < testimonial.rating ? 'bi-star-fill' : 'bi-star-fill');
             ratingElement.appendChild(star);
         }
+
+        // Disable/enable arrows
+        document.getElementById('testimonial-arrow-right').classList.toggle('disabled', index === 0);
+        document.getElementById('testimonial-arrow-left').classList.toggle('disabled', index === testimonials.length - 1);
     }
 
-    document.getElementById('testimonial-arrow-right').addEventListener('click', function() {
-        currentIndex = (currentIndex + 1) % testimonials.length;
-        renderTestimonial(currentIndex);
+    document.getElementById('testimonial-arrow-left').addEventListener('click', function() {
+        if (currentIndex < testimonials.length - 1) {
+            currentIndex++;
+            renderTestimonial(currentIndex);
+        }
     });
 
-    document.getElementById('testimonial-arrow-left').addEventListener('click', function() {
-        currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-        renderTestimonial(currentIndex);
+    document.getElementById('testimonial-arrow-right').addEventListener('click', function() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            renderTestimonial(currentIndex);
+        }
     });
 
     renderTestimonial(currentIndex);
