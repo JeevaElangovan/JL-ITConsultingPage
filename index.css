@@ -1315,8 +1315,8 @@ p {
   .testimonial-arrow-right{
   transform: rotate(270deg);
   cursor: pointer;
-  font-size:40px !important;
-  color: #C4C4C4;
+  font-size:50px !important;
+  color: #706E72;
   
   
   }
@@ -1324,8 +1324,9 @@ p {
   
   transform: rotate(90deg);
   cursor: pointer;
-  font-size:40px !important;
-  color: #C4C4C4;
+  font-size:50px !important;
+  color: #706E72;
+  
   }
   
   .testimonial-arrows span:hover{
@@ -1335,6 +1336,12 @@ p {
     float: right;  
     margin-right: 200px;
   }
+
+.testimonial-arrow-left.disabled,
+.testimonial-arrow-right.disabled {
+     cursor: not-allowed;
+     opacity: 0.4;
+}
   
   .testimonial-frame {
     padding: 10px;
