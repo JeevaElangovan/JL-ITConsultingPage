@@ -227,18 +227,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Disable/enable arrows
-        document.getElementById('testimonial-arrow-right').classList.toggle('disabled', index === 0);
-        document.getElementById('testimonial-arrow-left').classList.toggle('disabled', index === testimonials.length - 1);
+        document.getElementById('testimonial-arrow-left').classList.toggle('disabled', index === 0);
+        document.getElementById('testimonial-arrow-right').classList.toggle('disabled', index === testimonials.length - 1);
     }
 
-    document.getElementById('testimonial-arrow-left').addEventListener('click', function() {
+    document.getElementById('testimonial-arrow-right').addEventListener('click', function() {
         if (currentIndex < testimonials.length - 1) {
             currentIndex++;
             renderTestimonial(currentIndex);
         }
     });
 
-    document.getElementById('testimonial-arrow-right').addEventListener('click', function() {
+    document.getElementById('testimonial-arrow-left').addEventListener('click', function() {
         if (currentIndex > 0) {
             currentIndex--;
             renderTestimonial(currentIndex);
