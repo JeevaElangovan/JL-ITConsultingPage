@@ -164,6 +164,9 @@ p {
     font-size: xx-large;
     text-align: center;
   }
+  .Consulting-services-part1 p{
+    text-align: center;
+  }
   .Consulting-btn1 button {
     width: 204px;
     font-weight: 700;
@@ -1782,6 +1785,7 @@ p {
   }
   .accordion-content {
     padding: 10px;
+    color: #676968;
     display: none;
   }
   .accordion-toggle {
@@ -2241,12 +2245,16 @@ p {
   .footer .icon:hover {
     color: #000000;
   }
-  
+ 
+  .footer-text1{
+    margin-top: 8px;
+  }
   .footer-text1, .footer-text2 {
     font-size: 14px;
   }
-  .footer-text1{
-    margin-top: 8px;
+  .footer-text1 a,
+  .footer-text1 a:hover{
+    color: #676968;
     text-decoration: underline;
     cursor: pointer;
   }
