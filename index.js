@@ -90,102 +90,56 @@ function redirectToPage() {
 }
 
 
+// section -  7 Our Case Studies
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const content = [
+        {
+            head: "Construction Projects Bidding Platform",
+            text:"We reinvent the eCommerce software solution experience with AI-driven chatbots and intelligent virtual assistants that provide personalized customerWe reinvent the eCommerce software solution experience with AI-driven chatbots and intelligent virtual assistants that provide personalized customer. We reinvent the eCommerce software solution experience with AI-driven chatbots and intelligent virtual assistants that provide personalized customer."
+        },
+        {
+            head: "Construction Projects Bidding Platform",
+            text:"We reinvent the JustLogix software solution experience with AI-driven chatbots and intelligent virtual assistants that provide personalized customerWe reinvent the eCommerce software solution experience with AI-driven chatbots and intelligent virtual assistants that provide personalized customer. We reinvent the eCommerce software solution experience with AI-driven chatbots and intelligent virtual assistants that provide personalized customer."
+        },
+        {
+            head: "Construction Projects Bidding Platform",
+            text:"We reinvent the Skein Tech software solution experience with AI-driven chatbots and intelligent virtual assistants that provide personalized customerWe reinvent the eCommerce software solution experience with AI-driven chatbots and intelligent virtual assistants that provide personalized customer. We reinvent the eCommerce software solution experience with AI-driven chatbots and intelligent virtual assistants that provide personalized customer."
+        }
+    ];
+
+    let currentIndex = 0;
+
+    function renderStudies(index) {
+        const studies = content[index];
+        document.getElementById('our-case-studies-head').textContent = studies.head;
+        document.getElementById('our-case-studies-para').textContent = studies.text;
+
+        document.getElementById('our-case-left-arrow').classList.toggle('disabled', index === 0);
+        document.getElementById('our-case-right-arrow').classList.toggle('disabled', index === content.length - 1);
+    }
+
+    document.getElementById('our-case-right-arrow').addEventListener('click', function() {
+        if (currentIndex < content.length - 1) {
+            currentIndex++;
+            renderStudies(currentIndex);
+        }
+    });
+
+    document.getElementById('our-case-left-arrow').addEventListener('click', function() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            renderStudies(currentIndex);
+        }
+    });
+
+    renderStudies(currentIndex);
+});
+
+
+
 // Section - 9 Our Testimonials
-
-
-// const testimonials = [
-//     {
-//         text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!",
-//         name: "Mizara Mona",
-//         position: "Project Manager",
-//         rating: "bi-star-fill"
-//     },
-//     {
-//         text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!",
-//         name: "John Doe",
-//         position: "Software Engineer",
-//         rating: "⭐⭐⭐⭐"
-//     },
-//     {
-//         text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. Est deserunt animi qui pariatur atque non nisi sint!",
-//         name: "Jane Smith",
-//         position: "Graphic Designer",
-//         rating: "⭐⭐⭐⭐⭐"
-//     }
-// ];
-
-// let currentTestimonial = 0;
-
-// function updateTestimonial(index) {
-//     document.getElementById('testimonial-text').innerText = testimonials[index].text;
-//     document.getElementById('testimonial-name').innerText = testimonials[index].name;
-//     document.getElementById('testimonial-position').innerText = testimonials[index].position;
-//     document.getElementById('testimonial-rating').innerText = testimonials[index].rating;
-// }
-
-// document.getElementById('testimonial-arrow-left').addEventListener('click', () => {
-//     currentTestimonial = (currentTestimonial === 0) ? testimonials.length - 1 : currentTestimonial - 1;
-//     updateTestimonial(currentTestimonial);
-// });
-
-// document.getElementById('testimonial-arrow-right').addEventListener('click', () => {
-//     currentTestimonial = (currentTestimonial === testimonials.length - 1) ? 0 : currentTestimonial + 1;
-//     updateTestimonial(currentTestimonial);
-// });
-// =========================
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     const testimonials = [
-//         {
-//             text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam.",
-//             name: "Mizara Mona",
-//             position: "Project Manager",
-//             rating: 5
-//         },
-//         {
-//             text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam.",
-//             name: "John Doe",
-//             position: "Software Engineer",
-//             rating: 5
-//         },
-//         {
-//             text: "Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam.",
-//             name: "Jane Smith",
-//             position: "Graphic Designer",
-//             rating: 5
-//         }
-//     ];
-
-//     let currentIndex = 0;
-
-//     function renderTestimonial(index) {
-//         const testimonial = testimonials[index];
-//         document.getElementById('testimonial-text').textContent = testimonial.text;
-//         document.getElementById('testimonial-name').textContent = testimonial.name;
-//         document.getElementById('testimonial-position').textContent = testimonial.position;
-
-//         const ratingElement = document.getElementById('testimonial-rating');
-//         ratingElement.innerHTML = '';
-//         for (let i = 0; i < 5; i++) {
-//             const star = document.createElement('i');
-//             star.classList.add('bi');
-//             star.classList.add(i < testimonial.rating ? 'bi-star-fill' : 'bi-star-fill');
-//             ratingElement.appendChild(star);
-//         }
-//     }
-
-//     document.getElementById('testimonial-arrow-right').addEventListener('click', function() {
-//         currentIndex = (currentIndex + 1) % testimonials.length;
-//         renderTestimonial(currentIndex);
-//     });
-
-//     document.getElementById('testimonial-arrow-left').addEventListener('click', function() {
-//         currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-//         renderTestimonial(currentIndex);
-//     });
-
-//     renderTestimonial(currentIndex);
-// });
 
 document.addEventListener('DOMContentLoaded', function() {
     const testimonials = [
