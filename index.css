@@ -138,6 +138,7 @@ p {
 
 .Consulting-services-part1 h1 {
   margin-bottom: 30px;
+  font-size: 50px;
 }
 .Consulting-services-part2 img {
   margin-top: 20px;
@@ -983,7 +984,7 @@ p {
 .our-case-studies-img{
     position: absolute;
     z-index: -10;
-    margin-left: 685px;
+    margin-left: 640px;
     height: 358px;
     width: 480px;
 
