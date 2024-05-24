@@ -252,6 +252,12 @@ p {
   font-weight: 600;
 }
 
+.service-overview-col span{
+    position: absolute;
+    font-size: larger;
+    margin-top: 4px;
+}
+
 @media (max-width: 320px) {
   .service-overview-col img {
     margin-left: -10px !important;
@@ -755,6 +761,8 @@ p {
 }
 .technologies-we-work span{
     position: absolute;
+    font-size: larger;
+    margin-top: 4px;
 }
 
 .technologies-we-work a,
@@ -780,6 +788,8 @@ p {
 
 .technologies-we-work-2 span{
     position: absolute;
+    font-size: larger;
+    margin-top: 4px;
 }
 
 .leverage-technical-layout1 {
@@ -954,6 +964,8 @@ p {
 .our-case-studies-view span{
     position: absolute;
     margin-left: 5px;
+    font-size: larger;
+    margin-top: 4px;
 }
 
 .our-case-studies-view a,
@@ -1604,6 +1616,8 @@ p {
 }
 .news-and-blogs-content-2 span{
     position: absolute;
+    margin-top: 4px;
+    font-size: larger;
 }
 
 @media(max-width:425px){
