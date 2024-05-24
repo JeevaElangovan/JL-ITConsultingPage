@@ -169,9 +169,10 @@ p {
     text-align: center;
   }
   .Consulting-btn1 button {
-    width: 204px;
+    width: 154px;
     font-weight: 700;
     margin-top: 0px;
+    height: 36px;
   }
   .Consulting-btn1 {
     display: flex;
@@ -665,6 +666,7 @@ p {
 
 .Cooperation-Models-button {
   padding: 10px 20px 10px 20px;
+  height: 42px;
   gap: 10px;
   border-radius: 8px;
   background: linear-gradient(90deg, #23899c 13.04%, #2ca068 91.03%);
@@ -736,8 +738,10 @@ p {
   .Cooperation-Models-button {
     font-size: 18px;
     font-weight: 600;
-    line-height: 25.14px;
+    gap:0px;
+    padding: 0px 15px;
     margin-top: 15px !important;
+    height: 36px;
   }
 }
 
@@ -1495,7 +1499,7 @@ p {
   
   @media (min-width:376px) and (max-width:425px){
     .testimonial-content{
-        height: 400px;
+        height: 360px;
         width: 360px;
         margin-left: -70px;
     }
@@ -1504,7 +1508,7 @@ p {
     }
     .testimonial-women-img img{
         height: 90px;
-        margin-top: 25px;
+        margin-top: 35px;
         margin-left: -120px;
     }
     .testimonial-arrows{
@@ -1513,7 +1517,7 @@ p {
   }
   @media (min-width:321px) and (max-width:375px){
     .testimonial-content{
-        height: 420px;
+        height: 380px;
         width: 320px;
         margin-left: -90px;
     }
@@ -1534,7 +1538,7 @@ p {
       height: 630px;
     }
     .testimonial-content{
-        height: 430px;
+        height: 410px;
         width: 260px;
         margin-left:-80px;
     }
