@@ -138,7 +138,7 @@ p {
 
 .Consulting-services-part1 h1 {
   margin-bottom: 30px;
-  font-size: 50px;
+  font-size: 56px;
 }
 .Consulting-services-part2 img {
   margin-top: 20px;
@@ -192,7 +192,6 @@ p {
 
 /* ---Section - 2 Service Overview--- */
 
-/* ---Section - 2 Service Overview--- */
 
 .service-overview-top {
   margin-top: 100px;
@@ -291,6 +290,8 @@ p {
     font-size: large;
   }
 }
+
+/* ---Section - 2 Service Overview--- */
 
 /* ----Section - 3 Why Choose us---- */
 
