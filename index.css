@@ -239,6 +239,7 @@ p {
   text-align: left;
   position: absolute;
   margin-top: 5px;
+  color: #000000;
 }
 .service-overview-col p {
   font-size: 14px;
@@ -313,9 +314,9 @@ p {
   margin-top: 50px !important;
 }
 
-.why-choose-us-col1 h5 {
+.why-choose-us-col1 h4 {
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 18px ;
 }
 
 .why-choose-us-col1 p {
@@ -323,6 +324,9 @@ p {
 }
 .why-choose-us-row-2 {
   margin-bottom: 15px;
+}
+.why-choose-us-row-2 h4{
+    font-size: 18px;
 }
 .why-choose-us-row-2 p {
   font-size: 14px;
@@ -975,13 +979,29 @@ p {
     font-weight: 600;
 }
 
+
 .our-case-studies-img{
     position: absolute;
     z-index: -10;
     margin-left: 685px;
     height: 358px;
     width: 480px;
+
 }
+.our-case-studies-arrows span{
+    cursor: pointer;
+}
+.our-case-right-arrow{
+    padding-left: 10px;
+}
+.our-case-left-arrow.disabled,
+.our-case-right-arrow.disabled {
+     cursor:context-menu;
+     opacity: 0.4;
+     background:none ;
+     color: #000000;
+}
+
 
 @media(max-width:425px){
     .our-case-studies-head h1{
@@ -1148,7 +1168,11 @@ p {
 }
 
 .it-conssulting-benefits-col2{
-    margin-top: 10px !important;
+    margin-top: 30px !important;
+    
+}
+.it-conssulting-benefits-col2 h4{
+    font-size: 18px;
 }
 .it-conssulting-benefits-col2 p{
     font-size: 14px;
@@ -1166,6 +1190,13 @@ p {
     z-index: 10;
     margin-left: -25px;
     margin-top: -35px !important;
+}
+
+@media(min-width:768px){
+    .it-conssulting-benefits-col2{
+        height: 500px;
+        overflow-x: auto;
+    }
 }
 
 
@@ -1251,8 +1282,15 @@ p {
         margin-left: 250px;
     }
     .it-conssulting-scribble{
-        margin-top: -900px !important;
+        margin-top: -950px !important;
         margin-left: -10px;
+    }
+    .it-conssulting-benefits-col2 .col {
+        margin-left: 8px;
+    }
+    .it-conssulting-benefits-col2 h4,
+    .it-conssulting-benefits-col2 p{
+        margin-left: 5px;
     }
   
 } 
@@ -1360,24 +1398,7 @@ p {
   #testimonial-text{
     margin-top: 30px;
   }
-  
-  
-  /* .testimonial-arrow-right{
-  transform: rotate(270deg);
-  cursor: pointer;
-  font-size:50px !important;
-  color: #706E72;
-  
-  
-  }
-  .testimonial-arrow-left{
-  
-  transform: rotate(90deg);
-  cursor: pointer;
-  font-size:50px !important;
-  color: #706E72;
-  
-  } */
+ 
   .testimonial-arrow-right{
     margin-left: 10px;
     cursor: pointer;
