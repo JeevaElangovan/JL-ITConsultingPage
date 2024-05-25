@@ -161,9 +161,15 @@ p {
 }
 
 @media (max-width: 425px) {
+    .Consulting-services{
+        margin-top: 80px;
+    }
   .Consulting-services-part1 h1 {
-    font-size: xx-large;
+    font-size: 36px;
     text-align: center;
+  }
+  .Consulting-services-part1 h6{
+    margin-top: -25px;
   }
   .Consulting-services-part1 p{
     text-align: center;
@@ -1022,7 +1028,52 @@ p {
     .our-case-studies-box-content a{
         display: none;
     }
+    .our-case-studies-box-content h5{
+        margin-top: -8px;
+    }
+    .our-case-studies-box-content p{
+        margin-top: 15px;
+    }
 
+    /* Arrows - 2 */
+    .our-case-studies-arrows-2{
+        position: relative;
+        text-align: center;
+    }
+    .our-case-studies-arrows-2 span{
+        cursor: pointer;
+        color: #ffffff;
+        border-radius: 50px;
+        margin-left: 10px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(93.27deg, #23899C -14.73%, #2CA068 104.65%);
+    
+
+    }
+    .our-case-right-arrow-2{
+        margin-top: 30px;
+        text-align: center;
+        padding-left: 1px;
+    }
+    .our-case-left-arrow-2.disabled,
+    .our-case-right-arrow-2.disabled {
+         cursor:context-menu;
+         opacity: 0.4;
+         background:none ;
+         color: #000000;
+    }
+
+
+    .our-case-studies-arrows{
+        display: none;
+    }
+
+}
+
+@media(min-width:426px){
+    .our-case-studies-arrows-2{
+        display: none;
+    }
 }
 
 @media (min-width:376px) and (max-width:425px){
@@ -1031,7 +1082,7 @@ p {
     }
    
     .our-case-studies-part1{
-        height: 350px;
+        height: 290px;
         width: 330px;
         margin-top: 230px;
         margin-left: 25px;
@@ -1058,7 +1109,7 @@ p {
     }
    
     .our-case-studies-part1{
-        height: 360px;
+        height: 300px;
         width: 280px;
         margin-top: 190px;
         margin-left: 25px;
@@ -1084,7 +1135,7 @@ p {
     }
    
     .our-case-studies-part1{
-        height: 360px;
+        height: 330px;
         width: 250px;
         margin-top: 190px;
         margin-left: 20px;
