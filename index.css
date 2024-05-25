@@ -357,7 +357,7 @@ p {
   }
 
   .why-choose-us-row-2 h4{
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -1712,6 +1712,9 @@ p {
     }
     .news-and-blogs-content-1{
         margin-bottom: 25px;
+    }
+    .news-and-blogs-content-2 h5{
+        font-size: 18px;
     }
 }
 
