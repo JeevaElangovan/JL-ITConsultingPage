@@ -118,6 +118,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         document.getElementById('our-case-left-arrow').classList.toggle('disabled', index === 0);
         document.getElementById('our-case-right-arrow').classList.toggle('disabled', index === content.length - 1);
+    
+        document.getElementById('our-case-left-arrow-2').classList.toggle('disabled', index === 0);
+        document.getElementById('our-case-right-arrow-2').classList.toggle('disabled', index === content.length - 1);
     }
 
     document.getElementById('our-case-right-arrow').addEventListener('click', function() {
@@ -128,6 +131,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.getElementById('our-case-left-arrow').addEventListener('click', function() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            renderStudies(currentIndex);
+        }
+    });
+    document.getElementById('our-case-right-arrow-2').addEventListener('click', function() {
+        if (currentIndex < content.length - 1) {
+            currentIndex++;
+            renderStudies(currentIndex);
+        }
+    });
+
+    document.getElementById('our-case-left-arrow-2').addEventListener('click', function() {
         if (currentIndex > 0) {
             currentIndex--;
             renderStudies(currentIndex);
