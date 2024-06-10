@@ -23,7 +23,7 @@ body {
 p {
   color: #676968;
 }
-
+/* 
 .navbar_button {
   border-radius: 8px;
   background: linear-gradient(90deg, #23899c 13.04%, #2ca068 91.03%);
@@ -32,6 +32,7 @@ p {
   font-weight: 700;
   border: none !important;
   font-size: 16px;
+  padding: 5px 10px;
 }
 .navbar-button {
   border-radius: 8px;
@@ -49,25 +50,21 @@ p {
   border-top-color: green !important;
 }
 
-/* Custom CSS to change carousel control button color to green */
 .carousel-control-prev,
 .carousel-control-next {
   background-color: green !important;
 }
 
-/* Custom CSS to change carousel control button icon color to white */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: white;
 }
 
-/* Navbar logo styles */
 .nav-logo {
   width: 210px !important;
   height: 34px !important;
 }
 
-/* Sidebar styles */
 .sidebar {
   position: fixed;
   top: 0;
@@ -126,7 +123,7 @@ p {
     height: 30px !important;
     width: 140px !important;
   }
-}
+} */
 
 /* ----NavBar--- */
 
@@ -1294,12 +1291,12 @@ p {
     }
 
     .it-conssulting-benefits-col1 img{
-        width: 380px !important;
-        height: 500px !important;
+        width: 330px !important;
+        height: auto !important;
         margin-left: 10px;
     }
     .it-conssulting-dots{
-        margin-left: 355px;
+        margin-left: 305px;
     }
     .it-conssulting-scribble{
         margin-top: -780px !important;
@@ -1315,7 +1312,7 @@ p {
     }
     .it-conssulting-benefits-col1 img{
         width: 300px !important;
-        height: 460px !important;
+        height: auto !important;
         margin-left: 15px;
     }
     .it-conssulting-dots{
@@ -1332,7 +1329,7 @@ p {
     
     .it-conssulting-benefits-col1 img{
         width: 280px !important;
-        height: 350px !important;
+        height: auto !important;
         margin-left: 5px;
     }
     .it-conssulting-dots{
@@ -1399,7 +1396,7 @@ p {
     /* height: 370px; */
     text-align: center;
     z-index: -10 !important;
-    margin-left: 100px;
+    margin-left: 80px;
     /* margin-top: 100px; */
     /* position: absolute; */
   
@@ -1815,7 +1812,7 @@ p {
 
 /* ----Section - 11 Frequently asked Questions */
 
-.section13layout{
+/* .section13layout{
     width: 100%;
     margin-top: 108px;
    }
@@ -1824,15 +1821,13 @@ p {
    }
    .section13heading{
     width: 100%;
-    /* font-size: 48px; */
-    /* font-weight: 600; */
+   
     line-height: 60.34px;
     text-align: left;
     color: #000000;
    }
    .section13heading span{
-    /* font-size: 48px; */
-    /* font-weight: 700; */
+    
     text-align: center;
     color: #2CA068;
    }
@@ -1990,7 +1985,7 @@ p {
       line-height: 17.6px;
       text-align: left;
     }
-  }
+  } */
 
 
 
@@ -2316,7 +2311,7 @@ p {
 
 
 /* ---Section - 13 Footer---- */
-
+/* 
 
 .footer {
     background-color: #ffffff;
@@ -2474,6 +2469,6 @@ p {
   
   }
   }
-
+ */
 
 /* ---Section - 13 Footer---- */
